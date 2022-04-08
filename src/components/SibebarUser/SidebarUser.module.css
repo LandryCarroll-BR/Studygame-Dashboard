@@ -1,3 +1,22 @@
+.sidebarUser {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  justify-items: center;
+  padding: 0 6em 0 6em;
+  height: 100vh;
+  flex: 0;
+}
+
+.logo {
+  margin: 5em auto 12em auto;
+  height: 2.25em;
+}
+
 .list {
   text-align: left;
   display: flex;

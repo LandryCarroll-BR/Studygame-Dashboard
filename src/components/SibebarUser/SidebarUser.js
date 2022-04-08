@@ -5,6 +5,7 @@ import { clearGame } from "../../features/gameSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { logout, selectUser } from "../../features/userSlice";
 
+import logo from "../../images/svg/logo.svg";
 import DashboardIcon from "../../images/svg/DashboardIcon";
 import ScoresIcon from "../../images/svg/ScoresIcon";
 import SettingsIcon from "../../images/svg/SettingsIcon";
@@ -14,7 +15,8 @@ function SidebarUser() {
   const user = useSelector(selectUser);
 
   return (
-    <>
+    <div className={styles.sidebarUser}>
+      <img className={styles.logo} src={logo} alt="logo" />
       <ul className={styles.list}>
         <li
           className={styles.listItem}
@@ -44,7 +46,7 @@ function SidebarUser() {
         <img className={styles.userPhoto} src={user.photo} alt="user" />
         <h4>sign out</h4>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 import { selectUser } from "../../features/userSlice";
 import { selectGuestName } from "../../features/guestSlice";
 
-import logo from "../../images/svg/logo.svg";
 import SidebarGuest from "../SidebarGuest/SidebarGuest";
 import SidebarUser from "../SibebarUser/SidebarUser";
 
@@ -20,13 +19,7 @@ function SideBar() {
     }
   };
 
-  return (
-    <aside className={styles.sidebar}>
-      <img className={styles.logo} src={logo} alt="logo" />
-
-      {toggleSideBar()}
-    </aside>
-  );
+  return <aside className={styles.sidebar}>{toggleSideBar()}</aside>;
 }
 
 export default SideBar;
