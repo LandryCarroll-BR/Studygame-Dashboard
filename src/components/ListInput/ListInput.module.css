@@ -1,0 +1,62 @@
+.listItem {
+  border-bottom: 1px solid #c7cdd496;
+  padding: 2em 2.7em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  position: relative;
+  z-index: 1;
+}
+
+.listItem:last-of-type {
+  border-bottom: none;
+}
+
+.listInput,
+.listInput::placeholder {
+  font-size: 1.8rem;
+  color: var(--gray-light);
+  outline: none !important;
+  border: none !important;
+  font-family: inherit;
+  resize: none;
+}
+
+.listItem > textarea {
+  text-align: right;
+  flex: 0.75;
+  margin-right: 3.7em;
+}
+
+.listInput:focus::placeholder {
+  color: rgba(255, 255, 255, 0);
+}
+
+.deleteInput {
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: absolute;
+  cursor: pointer;
+  height: 100%;
+  right: 0;
+  background: var(--primary-color);
+  border: 0;
+  outline: none;
+  color: var(--black);
+  padding: 0 1em;
+}
+
+.deleteInput:hover,
+.deleteInput:focus {
+  background: var(--primary-color);
+  color: white;
+  opacity: 1;
+  filter: brightness(1.1);
+}
+
+.deleteInput:disabled {
+  color: rgba(255, 255, 255, 0);
+  filter: none;
+  cursor: initial;
+}

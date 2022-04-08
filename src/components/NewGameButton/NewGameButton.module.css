@@ -1,0 +1,17 @@
+.newGame {
+  min-height: 145px;
+  background: none;
+  border-radius: 2em;
+  border: 2px solid var(--gray-light);
+  cursor: pointer;
+}
+
+.newGame > span {
+  color: var(--gray-light);
+  font-size: 1.8rem;
+}
+
+.newGame:hover,
+.newGame:focus {
+  background: rgba(90, 90, 90, 0.096);
+}

@@ -1,0 +1,27 @@
+.home {
+  flex: 1;
+  padding: 5em 8em;
+  min-height: 100vh;
+}
+
+.home > h1 {
+  margin-bottom: 0.2em;
+}
+
+.subTitle {
+  margin-bottom: 2em;
+}
+
+.subHeading {
+  color: var(--black);
+  font-weight: bold;
+  margin-bottom: 0.9em;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  gap: 20px;
+  margin-bottom: 5em;
+}

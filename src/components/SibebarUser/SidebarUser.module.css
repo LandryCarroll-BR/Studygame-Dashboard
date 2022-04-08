@@ -1,0 +1,63 @@
+.list {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+  padding: 0;
+  flex: 1;
+}
+
+.listItem {
+  cursor: pointer;
+  display: flex;
+  padding: 1.8em 4em 1.8em 100em;
+  margin-left: -100em;
+  margin-bottom: 01.5em;
+  border-radius: 0 2em 2em 0;
+  align-items: center;
+}
+
+.listItem:hover,
+.listItem:focus {
+  background: rgba(0, 0, 0, 0.137);
+}
+
+.listItem > svg {
+  margin-right: 1.7em;
+  fill: #fff;
+  width: 2.8rem;
+}
+
+.listText {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.listItem:first-child {
+  background: #f1f1f1;
+}
+
+.listItem:first-child > svg,
+.listItem:first-child > .listText {
+  color: var(--black) !important;
+  fill: var(--black) !important;
+}
+
+.userPhotoContainer {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5em;
+}
+
+.userPhoto {
+  width: 6em;
+  border-radius: 100vw;
+  border: 3px solid rgb(235, 235, 235);
+  margin-right: 0.7em;
+}
+
+.userPhotoContainer > h4 {
+  color: rgb(255, 255, 255);
+}

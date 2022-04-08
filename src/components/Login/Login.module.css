@@ -1,0 +1,118 @@
+.login {
+  display: flex;
+  min-height: 100vh;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.login > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  flex-grow: 1;
+  text-align: left;
+  align-items: center;
+}
+
+/* ------------ left ------------- */
+
+.left {
+  flex-basis: 45%;
+  background: #fff;
+}
+
+.left > * {
+  margin-bottom: 0.2em;
+  width: 80%;
+  max-width: 440px;
+}
+
+.google {
+  display: flex;
+  cursor: pointer;
+  border-radius: 100vw;
+  border: 1px solid #b3bac7;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+  margin: 3.5em 0 5.5em 0;
+}
+
+.google:hover,
+.google:focus {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 60, 0.1);
+}
+
+.google > * {
+  padding: 0.5em 0.3em;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--gray-light);
+}
+
+.inputHeading {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--gray-light);
+  text-align: center !important;
+  margin-bottom: 1.6em;
+}
+
+.inputHeading::before,
+.inputHeading::after {
+  content: "——";
+  font-weight: 400;
+  margin: 0 0.5em;
+}
+
+.nickname,
+.gameCode {
+  font-size: 2.3rem;
+  color: var(--gray-light);
+  border-radius: 22px;
+  border: 1px solid #b3bac7;
+  text-align: center !important;
+}
+
+.nickname {
+  padding: 1em 0;
+  margin-bottom: 0.8em;
+}
+
+.gameCode {
+  padding: 2em;
+  margin-bottom: 0.8em;
+}
+
+.joinContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.join {
+  cursor: pointer;
+  width: fit-content;
+  border: none;
+  border-radius: 0.5em;
+  font-size: 1.8rem;
+  padding: 0.33em 0.75em;
+  font-weight: 600;
+  color: var(--gray-dark);
+}
+
+.join:hover {
+  color: var(--primary-color);
+}
+
+/* ------------ right ------------- */
+
+.right {
+  flex-basis: 55%;
+  background-color: var(--primary-gradient-background);
+  background-image: var(--primary-gradient);
+}
+
+.right > * {
+  width: 50%;
+}

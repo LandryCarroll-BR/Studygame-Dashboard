@@ -1,0 +1,88 @@
+.gameCard,
+.statsCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em 3em;
+  position: relative;
+  border-radius: 2em;
+}
+
+.gameCard {
+  background-image: var(--secondary-gradient);
+  background-size: 1300%;
+}
+
+.play {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.6em;
+}
+
+.play > svg {
+  fill: #fff;
+  width: 2.2rem;
+  margin-right: 0.8rem;
+}
+
+.play > span {
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #fff;
+}
+
+.gameCard > h3 {
+  max-width: 18ch;
+  hyphens: auto;
+}
+
+.gameCard > h5 {
+  padding-bottom: 0.5em;
+}
+
+.edit {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.096);
+  padding: 1em 2em;
+  border-radius: 0 2em 0 2em;
+}
+
+.edit > svg {
+  fill: #fff;
+  width: 1.5rem;
+}
+
+.edit > span {
+  font-size: 1.5rem;
+  margin-right: 0.6rem;
+}
+
+.edit:hover {
+  background: rgba(0, 0, 0, 0.103);
+}
+
+.statsCard {
+  background: #fff;
+}
+
+.statsCard > * {
+  color: var(--black);
+}
+
+.statData {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.stat {
+  max-width: 10ch;
+}

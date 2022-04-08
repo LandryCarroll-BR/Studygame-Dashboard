@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  background: var(--primary-gradient-background);
+  background-image: var(--primary-gradient);
+}
